@@ -1,7 +1,7 @@
 {
-  "name": "v-quill-editor",
+  "name": "@morioh/v-quill-editor",
   "description": "Quill Rich Text Editor component for Vue.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Morioh Team",
   "main": "./dist/editor.min.js",
   "scripts": {

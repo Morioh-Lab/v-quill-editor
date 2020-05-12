@@ -45,7 +45,7 @@
 
             options: {
                 type: Object,
-                default: () => {}
+                default: () => { }
             },
         },
 
@@ -108,6 +108,10 @@
                 }
 
                 this.editor = new Quill(this.$refs.editor, o);
+
+                if (this.value) {
+                    this.editor.pasteHTML(this.value);
+                }
 
                 this.editor.on('selection-change', range => {
                     if (!range) {

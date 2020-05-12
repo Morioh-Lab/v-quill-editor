@@ -210,6 +210,11 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       this.editor = new quill__WEBPACK_IMPORTED_MODULE_0___default.a(this.$refs.editor, o);
+
+      if (this.value) {
+        this.editor.pasteHTML(this.value);
+      }
+
       this.editor.on('selection-change', function (range) {
         if (!range) {
           _this.$emit('blur', _this.editor);

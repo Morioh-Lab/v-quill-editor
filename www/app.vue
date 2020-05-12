@@ -39,7 +39,7 @@
     export default {
         data() {
             return {
-                value: '',
+                value: 'This is default value',
                 options: {
                     modules: {
 
